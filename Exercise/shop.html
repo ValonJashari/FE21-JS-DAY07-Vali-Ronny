@@ -9,7 +9,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style/styles.css" />
 
 </head>
 
@@ -17,11 +17,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light mynav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <img
-                    src="https://codefactory.wien/wp-content/uploads/2020/12/cropped-CodeFactory-LOGO-September-2020.png"
-                    alt="" width="150" height="50" class="d-inline-block align-top">
-
-            </a>
+            <a class="navbar-brand" href="#"> <img class="img-fluid" src="https://i.pinimg.com/originals/cd/32/e8/cd32e8c3a7002f505057e831831ad645.jpg" alt="" class="d-inline-block align-top" style="height: 20vh;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,33 +38,36 @@
 
 
     <!-- here ends navbar -->
-    <div class="container">
+    <div class="container" id="container">
 
-        <h2 class="text-center w-100 my-5 mx-1 p-3 h1 bg-light">Products</h2>
+        <h2 class="text-center w-100 my-5 mx-1 p-3 h1 bg-transparent">Products</h2>
 
 
         <div class="products row">
             <div class="product col-12 col-md-6 col-lg-4 text-center fw-bold">
-                <p class="product-title h3 m-3">Cube 2019</p>
-                <img class="product-image" src="Images/cube2019.jpeg">
+                <p class="product-title h3 m-3">Happy Anniversary</p>
+                <img class="product-image" src="https://cdn.idsitnetwork.net/wp-content/uploads/sites/23/2019/01/flower-shop-always-on-my-mind-65-167398.jpg">
                 <div class="product-details ">
-                    <p class="product-price h4 m-3">€ 3200.00</p>
+                    <p class="product-price h4 m-3">€ 32,80</p>
+                    <p class="product-stock h4 m-3 invisible">5</p>
                     <button class="btn btn-primary product-button" type="button">ADD TO CART</button>
                 </div>
             </div>
             <div class="product col-12 col-md-6 col-lg-4 text-center fw-bold">
-                <p class="product-title h3 m-3">GT Avalanche</p>
-                <img class="product-image" src="Images/gtavalanche.jpg">
+                <p class="product-title h3 m-3">Always on my mind</p>
+                <img class="product-image" src="https://5.imimg.com/data5/YQ/IQ/MY-65929370/anthurium-flowers-500x500.jpg">
                 <div class="product-details">
-                    <p class="product-price h4 m-3">€ 2100.00</p>
+                    <p class="product-price h4 m-3">€ 28,00</p>
+                    <p class="product-stock h4 m-3 invisible">5</p>
                     <button class="btn btn-primary product-button" type="button">ADD TO CART</button>
                 </div>
             </div>
             <div class="product col-12 col-md-6 col-lg-4 text-center fw-bold">
-                <p class="product-title h3 m-3">Trek 8</p>
-                <img class="product-image" src="Images/trekfull8.jpg">
+                <p class="product-title h3 m-3">Colors of Rainbow</p>
+                <img class="product-image" src="https://assets.eflorist.com/assets/products/PHR_/T282-9A.jpg">
                 <div class="product-details">
-                    <p class="product-price h4 m-3">€ 4500.00</p>
+                    <p class="product-price h4 m-3">€ 31,50</p>
+                    <p class="product-stock h4 m-3 invisible">5</p>
                     <button class="btn btn-primary product-button" type="button">ADD TO CART</button>
                 </div>
             </div>
@@ -86,10 +85,18 @@
             <div id="cart-items">
                 <!-- empty cart -->
             </div>
-            <div id="total" class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span id="price" class="cart-total-price h4">€0.00</span>
+            <div class="d-flex justify-content-end">
+                <div id="total" class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span id="price" class="cart-total-price h4">€0.00</span>
+                    <span id="discount" class="cart-total-price text-muted invisible">(10% Discount applied)</span>
+                </div>      
+                <div id="amount-total" class="cart-total ms-3">
+                    <strong class="cart-total-title">Total Quantity</strong>
+                    <span id="amount" class="cart-total-price h4">0</span>
+                </div>
             </div>
+            
             <div class="d-flex justify-content-center m-4">
                 <button id="btn-purchase" class="btn btn-primary btn-purchase" type="button">Check out <br><i
                         class="fa fa-handshake-o" style="font-size:36px;color:white"></i></button>
@@ -102,7 +109,7 @@
         <span class=" h2">CodeFactory Shop</span>
     </footer>
     <!--<script src="Script/cart.js"></script> -->
-    <script src="script.js"></script>
+    <script src="Script/cart.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
