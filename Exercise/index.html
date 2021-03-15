@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light mynav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img
+                    src="https://cdn6.f-cdn.com/contestentries/96328/11818005/53f19eee375b6_thumb900.jpg"
+                    alt="" width="150" height="50" class="d-inline-block align-top">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active h4" aria-current="page" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h4" href="#">Delivery</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- here ends navbar -->
+    <div class="container">
+
+        <h2 class="text-center w-100 my-5 mx-1 p-3 h1 bg-light">HAPPINES</h2>
+
+
+        <div class="products row">
+            <div class="product col-12 col-md-6 col-lg-4 text-center fw-bold">
+                <p class="product-title h3 m-3">Engagment</p>
+                <img class="product-image" src="images/Crocus.jpg">
+                <div class="product-details ">
+                    <p class="product-price h4 m-3">€ 35.00</p>
+                    <p class="product-stock h4 m-3 invisible">5</p>
+                    <button class="btn btn-primary product-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product col-12 col-md-6 col-lg-4 text-center fw-bold">
+                <p class="product-title h3 m-3">Anniversary</p>
+                <img class="product-image" src="images/Iris.jpg">
+                <div class="product-details">
+                    <p class="product-price h4 m-3">€ 25.00</p>
+                    <p class="product-stock h4 m-3 invisible">5</p>
+                    <button class="btn btn-primary product-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product col-12 col-md-6 col-lg-4 text-center fw-bold">
+                <p class="product-title h3 m-3">Wedding</p>
+                <img class="product-image" src="images/marguerite_daisy.jpg">
+                <div class="product-details">
+                    <p class="product-price h4 m-3">€ 45.00</p>
+                    <p class="product-stock h4 m-3 invisible">5</p>
+                    <button class="btn btn-primary product-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--flowers  starts here  -->
+        <div id="cart" class="mt-5">
+            <div class="cart-header h4  border-bottom row">
+                <span class="cart-item col-6 mb-3 ">ITEM</span>
+                <span class="cart-price col-3 mb-3">PRICE</span>
+                <span class="cart-quantity col-3 mb-3">QUANTITY</span>
+            </div>
+            <div id="cart-items">
+                <!-- empty cart -->
+            </div>
+            <div class="d-flex justify-content-end">
+                    <div id="total" class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span id="price" class="cart-total-price h4">€0.00</span>
+                        <span id="discount" class="flower-total-price text-muted invisible">(10% Discount is applied)</span>
+                        <span id="discount1" class="flower-total-price text-muted invisible">(25% Discount is applied)</span>
+                        <span id="discount2" class="flower-total-price text-muted invisible">(50% Discount is applied)</span>
+                    </div>
+                    <div id="amount-total" class="cart-total ms-3">
+                        <strong class="cart-total-title">Total Quantity</strong>
+                        <span id="amount" class="cart-total-price h4">0</span>
+                    </div>
+                <div class="d-flex justify-content-center m-4">
+                    <button id="btn-purchase" class="btn btn-primary btn-purchase" type="button">Check out <br><i
+                            class="fa fa-handshake-o" style="font-size:36px;color:white"></i></button>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <footer class="mynav d-flex justify-content-center align-items-center">
+        <span class=" h2">Florist shop HAPPINES</span>
+    </footer>
+    <!--<script src="Script/cart.js"></script> -->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
